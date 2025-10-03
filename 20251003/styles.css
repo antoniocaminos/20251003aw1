@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor Flex */
+.flex-demo {
+  display: flex;                /* Activa Flexbox */
+  flex-direction: row;          /* en fila (prueba: row-reverse, column, column-reverse) */
+  justify-content: space-around;/* espacio alrededor (prueba: flex-start, center, space-between, space-evenly) */
+  align-items: center;          /* centrado vertical (prueba: flex-start, flex-end, stretch, baseline) */
+  flex-wrap: wrap;              /* permite que baje de línea (prueba: nowrap, wrap-reverse) */
+  gap: 20px;                    /* separación entre cajas (usa px, %, rem para experimentar) */
+  border: 2px solid #333;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Cajas individuales */
+.box {
+  background: lightcoral;
+  color: white;
+  padding: 20px;
+  width: fit-content;  /* el ancho se adapta al contenido */
+  min-width: 80px;     /* evita que quede demasiado chica */
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  flex: 1 1 150px;     /* (grow | shrink | basis) → prueba con distintos valores */
+}
